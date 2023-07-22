@@ -21,10 +21,15 @@ const Scene3D = () => {
     }, []);
 
     return (
-        <div className="">
-            <canvas ref={canvasRef} className="my-12" id="canvas3d" />
-        </div>
+        <>
+            <div className="">
+                <canvas ref={canvasRef} className="my-12" id="canvas3d" />
+            </div>
+        </>
+
     );
 };
 
 export default Scene3D;
+
+
