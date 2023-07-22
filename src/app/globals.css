@@ -1,3 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* src/tailwind.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add custom styles for background images */
+.bg-screen-small {
+    background-image: url('../assets/sm.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.bg-screen-medium {
+    background-image: url('../assets/lg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+
+.bg-screen-large {
+    background-image: url('../assets/lg.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
