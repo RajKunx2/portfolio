@@ -1,31 +1,119 @@
 /* src/tailwind.css */
 
+
+/* Add custom styles for background images */
+.bg-screen-small {
+  background-image: url('../assets/sm.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.bg-screen-medium {
+  background-image: url('../assets/lg.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.bg-screen-large {
+  background-image: url('../assets/lg.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+body {
+  background-color: #f4b8af;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px;
+  /* border thickness */
+  --s: 0.45em;
+  /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0) var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* tailwind.css (or any other CSS file you want to include this component's styles) */
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Add custom styles for background images */
-.bg-screen-small {
-    background-image: url('../assets/sm.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
+@layer base {
+  .button-56 {
+    @apply flex items-center justify-center;
+    @apply bg-rose-100 border border-black rounded-md;
+    @apply text-black cursor-pointer text-base h-12;
+    @apply relative max-w-full px-6 py-0;
+    @apply text-center no-underline select-none my-4 w-[240px] py-2;
+
+    &:after {
+      @apply bg-[#E85A4F] rounded-md;
+      @apply block absolute left-0 w-full h-12;
+      @apply top-[-2px] translate-x-2 translate-y-2 transition-transform duration-200;
+      content: "";
+      z-index: -1;
+    }
+
+    &:hover:after {
+      transform: translate(0, 0);
+    }
+
+    &:active {
+      background-color: #ffdeda;
+      outline: 0;
+    }
+
+    &:hover {
+      outline: 0;
+    }
+  }
 }
 
-.bg-screen-medium {
-    background-image: url('../assets/lg.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-}
-
-.bg-screen-large {
-    background-image: url('../assets/lg.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-}
-
-body {
-    background-color: #f4b8af;
+@layer components {
+  @screen sm {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
 }

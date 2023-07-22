@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Loading from "../components/loading";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
+import Socials from "../components/Socials";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,9 +27,9 @@ const Home = () => {
         style={{ visibility: isLoading ? "hidden" : "visible" }}
         className="relative h-screen flex items-center flex-col"
       >
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
-        <div>aosidhio</div>
+        <Socials />
       </div>
 
     </div>
