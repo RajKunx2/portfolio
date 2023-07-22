@@ -14,15 +14,19 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        ""
+    <div className="relative min-h-screen">
+      {isLoading && (
+        <div className="absolute inset-0 flex items-center justify-center w-full h-full bg-white z-50">
+          <Loading />
+        </div>
       )}
-      <div style={{ visibility: isLoading ? "hidden" : "visible" }} className="h-screen flex items-center">
+      <div
+        style={{ visibility: isLoading ? "hidden" : "visible" }}
+        className="relative h-screen flex items-center"
+      >
         <Hero />
-      </div>   </>
+      </div>
+    </div>
   );
 };
 
