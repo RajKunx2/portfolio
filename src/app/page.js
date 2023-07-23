@@ -11,12 +11,12 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7400);
+    }, 4);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="relative min-h-screen">
+    <div className="min-h-screen">
       {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center w-full h-full bg-white">
           <Loading />
@@ -25,13 +25,16 @@ const Home = () => {
 
       <div
         style={{ visibility: isLoading ? "hidden" : "visible" }}
-        className="relative h-screen flex items-center flex-col"
+        className="h-screen flex items-center flex-col"
       >
         {/* <Navbar /> */}
         <Hero />
+      </div>
+      <div
+        style={{ visibility: isLoading ? "hidden" : "visible" }}
+        className="h-screen flex items-center flex-col">
         <Socials />
       </div>
-
     </div>
   );
 };

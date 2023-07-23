@@ -20,18 +20,14 @@ export default function Navbar() {
         //     </Marquee>
         // </div>
         <div className='flex flex-col'>
-            <Marquee>
-                YOUR FRIENDLY NEIGHBOURHOOD DEVELOPER
+            <Marquee
+            speed={100}>
+                <span className='mx-4'>YOUR FRIENDLY NEIGHBOURHOOD DEVELOPER</span>
+                <span className='mx-4'>YOUR FRIENDLY NEIGHBOURHOOD DEVELOPER</span>
+                <span className='mx-4'>YOUR FRIENDLY NEIGHBOURHOOD DEVELOPER</span>
+                <span className='mx-4'>YOUR FRIENDLY NEIGHBOURHOOD DEVELOPER</span>
             </Marquee>
-            <Marquee>
-                RAJ
-            </Marquee>
-            <Marquee>
-                YOUR FRIENDLY NEIGHBOURHOOD DEVELOPER
-            </Marquee>
-            <Marquee>
-                RAJ
-            </Marquee></div>
+        </div>
 
     )
 }
