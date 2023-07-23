@@ -74,7 +74,7 @@ body {
 
 @font-face {
   font-family: 'Creative';
-  src: url('../asseTS/Greyrose.otf') format('truetype');
+  src: url('../assets/Greyrose.otf') format('truetype');
   /* Update the path and font format if needed */
   font-weight: normal;
   font-style: normal;
