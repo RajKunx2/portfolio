@@ -1,8 +1,8 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import Loading from "../components/loading";
-import Hero from "../components/hero";
-import Navbar from "../components/navbar";
+import Loading from "../components/loadingoading";
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
 import Socials from "../components/Socials";
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 10);
+    }, 7400);
     return () => clearTimeout(timer);
   }, []);
 
