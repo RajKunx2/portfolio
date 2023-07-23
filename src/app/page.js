@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import Loading from "../components/loadingoading";
+import Loading from "../components/loading";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Socials from "../components/Socials";
