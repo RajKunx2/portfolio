@@ -1,4 +1,5 @@
 import React from 'react';
+import SocailText from "./SocialText"
 
 const Socials = () => {
   return (
@@ -14,9 +15,8 @@ const Socials = () => {
           CHECK OUT RESUME 👇
         </button>
       </div>
-      <h1 className="text-6xl font-Creative my-16 text-[#E85A4F]">THEN LOOK NO FURTHER!</h1>
+      <SocailText />
     </>
-
   );
 };
 

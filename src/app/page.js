@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Loading from "../components/loading";
 import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
 import Socials from "../components/Socials";
 import About from "../components/About";
 
@@ -12,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7400);
+    }, 70);
     return () => clearTimeout(timer);
   }, []);
 
