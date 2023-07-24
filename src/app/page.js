@@ -4,6 +4,7 @@ import Loading from "../components/loading";
 import Hero from "../components/Hero";
 import Socials from "../components/Socials";
 import About from "../components/About";
+import Skills from "../components/Skills"
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +28,6 @@ const Home = () => {
         style={{ visibility: isLoading ? "hidden" : "visible" }}
         className="h-screen flex items-center flex-col"
       >
-        {/* <Navbar /> */}
         <Hero />
       </div>
       <div
@@ -35,6 +35,7 @@ const Home = () => {
         className="h-screen flex items-center flex-col">
         <Socials />
         <About />
+        <Skills />
       </div>
     </div>
   );
