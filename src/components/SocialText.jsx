@@ -18,7 +18,7 @@ const App = () => {
     }, []);
 
     return (
-        <h1 className='font-Creative md:text-5xl text-[26px] lg:text-7xl mt-16 text-[#d76457] h-fit'>
+        <h1 className='font-Creative md:text-5xl text-[26px] lg:text-7xl mt-16 text-[#d76457] h-fit my-4 lg:mt-12'>
             <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
         </h1>
     );
