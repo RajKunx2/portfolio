@@ -1,17 +1,15 @@
 import React from 'react'
 import Image from "next/image"
 import Main from "../assets/main.gif"
-import Edu from "../assets/edu.png"
 
 export default function About() {
     return (
-        <div className='flex flex-col md:flex-row h-[60vh] w-screen md:my-12 items-center my-8'>
+        <div className='flex flex-col md:flex-row h-fit w-screen md:my-12 items-center my-8'>
             <div className='md:basis-1/2 h-full w-full justify-center align-middle items-center'>
                 <Image alt='' src={Main} />
             </div>
-            <div className='md:basis-1/2 h-[60vh] align-middle justify-center w-[80%] md:w-full my-12 md:my-0 md:mr-12'>
-
-                <div href="" className="group relative block h-64 sm:h-80 lg:h-96">
+            <div className='md:basis-1/2 auto align-middle justify-center w-[80%] md:w-full my-12 md:my-0 md:mr-12'>
+                <div href="" className="group relative block h-80 sm:h-84 lg:h-96">
                     <span className="absolute inset-0 border-2 border-dashed border-black"></span>
 
                     <div className="relative flex h-full transform items-end border-2 border-black bg-white transition-transform group-hover:-translate-x-2 group-hover:-translate-y-2">
@@ -34,26 +32,26 @@ export default function About() {
                             <h2 className="mt-4 text-xl font-medium sm:text-2xl">About Me</h2>
                         </div>
 
-                        <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                            <h3 className="mt-4 text-xl font-medium sm:text-2xl">Hi, I am Raj 👋</h3>
+                        <div className="py-2 h-auto absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                            <h3 className="text-lg md:my-2 font-medium md:text-2xl">Hi, I am Raj 👋</h3>
 
-                            <p className="mt-4 text-sm sm:text-base">
+                            <div className="my-2-4 text-sm sm:text-base">
                                 I&lsquo;m your go-to web developer and designer, specializing in front-end development to bring your online visions to life. From sleek interfaces to captivating user experiences, I&lsquo;m here to spin some coding magic and cater to your every web requirement. Let&lsquo;s weave a web of brilliance together! 🚀🌐
-                            </p>
-                            <p className="flex flex-row h-fit text-[12px] lg:text-sm mt-3">
+                            </div>
+                            <div className="flex flex-row h-fit text-[10px] lg:text-sm mt-3">
                                 <p className='text-xl'>🎓</p>
-                                <p className='mx-3 font-semibold flex justify-center h-full'>  B Tech Electrical Engineering&lsquo;26, Delhi Technological University
+                                <p className='mx-3 font-semibold flex justify-center h-full my-auto'>B TECH ELECTRICAL ENGINEERING&lsquo;26, DELHI TECHNOLOGICAL UNIVERSITY
                                 </p>
-                            </p>
-                            <p className="flex flex-row h-fit text-[12px] lg:text-sm my-2">
-                                <p className='text-xl'>🎓</p>
-                                <p className='mx-3 font-semibold flex justify-center h-full'>  B Tech Electrical Engineering&lsquo;26, Delhi Technological University
+                            </div>
+                            <div className="flex flex-row h-fit text-[10px] lg:text-sm my-2">
+                                <p className='text-xl'>🥼</p>
+                                <p className='mx-3 font-semibold flex justify-center h-full my-auto'>1 YEAR OF EXPERIENCE
                                 </p>
-                            </p><p className="flex flex-row h-fit text-[12px] lg:text-sm my-2">
-                                <p className='text-xl'>🎓</p>
-                                <p className='mx-3 font-semibold flex justify-center h-full'>  B Tech Electrical Engineering&lsquo;26, Delhi Technological University
+                            </div><div className="flex flex-row h-fit text-[10px] lg:text-sm my-2">
+                                <p className='text-xl'>⚙️</p>
+                                <p className='mx-3 font-semibold flex justify-center h-full my-auto'>15+ PROJECTS
                                 </p>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
