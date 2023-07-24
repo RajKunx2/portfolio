@@ -29,25 +29,25 @@ export default function About() {
                                 />
                             </svg>
 
-                            <h2 className="mt-4 text-xl font-medium sm:text-2xl">About Me</h2>
+                            <h2 className="mt-4 text-xl sm:text-2xl font-Oswald font-semibold">About Me</h2>
                         </div>
 
                         <div className="py-2 h-auto absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                            <h3 className="text-lg md:my-2 font-medium md:text-2xl">Hi, I am Raj 👋</h3>
+                            <h3 className="text-lg md:my-2 font-Oswald font-semibold md:text-2xl">Hi, I am Raj 👋</h3>
 
-                            <div className="my-2-4 text-sm sm:text-base">
+                            <div className="my-2-4 text-sm sm:text-base font-Dosis">
                                 I&lsquo;m your go-to web developer and designer, specializing in front-end development to bring your online visions to life. From sleek interfaces to captivating user experiences, I&lsquo;m here to spin some coding magic and cater to your every web requirement. Let&lsquo;s weave a web of brilliance together! 🚀🌐
                             </div>
-                            <div className="flex flex-row h-fit text-[10px] lg:text-sm mt-3">
+                            <div className="flex flex-row h-fit text-[10px] lg:text-sm mt-3 font-Dosis">
                                 <p className='text-xl'>🎓</p>
                                 <p className='mx-3 font-semibold flex justify-center h-full my-auto'>B TECH ELECTRICAL ENGINEERING&lsquo;26, DELHI TECHNOLOGICAL UNIVERSITY
                                 </p>
                             </div>
-                            <div className="flex flex-row h-fit text-[10px] lg:text-sm my-2">
+                            <div className="flex flex-row h-fit text-[10px] lg:text-sm my-2 font-Dosis">
                                 <p className='text-xl'>🥼</p>
                                 <p className='mx-3 font-semibold flex justify-center h-full my-auto'>1 YEAR OF EXPERIENCE
                                 </p>
-                            </div><div className="flex flex-row h-fit text-[10px] lg:text-sm my-2">
+                            </div><div className="flex flex-row h-fit text-[10px] lg:text-sm my-2 font-Dosis">
                                 <p className='text-xl'>⚙️</p>
                                 <p className='mx-3 font-semibold flex justify-center h-full my-auto'>15+ PROJECTS
                                 </p>

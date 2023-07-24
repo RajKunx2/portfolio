@@ -9,7 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         Creative: ['Creative', 'sans-serif'],
-      },
+        Dosis: ['Dosis', 'sans-serif'],
+        Oswald: ['Oswald', 'sans-serif'],
+        Poiret: ['Poiret One', 'cursive'],
+      }
     },
   },
   plugins: [],
