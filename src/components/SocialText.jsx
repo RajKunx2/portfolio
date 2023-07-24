@@ -1,5 +1,4 @@
 "use client"
-
 import React from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
@@ -13,9 +12,9 @@ const App = () => {
     React.useEffect(() => {
         const intervalId = setInterval(() => {
             setIndex((index) => index + 1);
-        }, 3000); // every 3 seconds
+        }, 3000);
 
-        return () => clearInterval(intervalId); // Use clearInterval instead of clearTimeout
+        return () => clearInterval(intervalId); t
     }, []);
 
     return (

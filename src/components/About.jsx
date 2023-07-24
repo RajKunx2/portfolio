@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from "next/image"
 import Main from "../assets/main.gif"
+import Edu from "../assets/edu.png"
 
 export default function About() {
     return (
         <div className='flex flex-col md:flex-row h-[60vh] w-screen md:my-12 items-center my-8'>
-            <div className='md:basis-1/2 h-full w-full justify-center align-middle'>
+            <div className='md:basis-1/2 h-full w-full justify-center align-middle items-center'>
                 <Image alt='' src={Main} />
             </div>
             <div className='md:basis-1/2 h-[60vh] align-middle justify-center w-[80%] md:w-full my-12 md:my-0 md:mr-12'>
@@ -30,18 +31,29 @@ export default function About() {
                                 />
                             </svg>
 
-                            <h2 className="mt-4 text-xl font-medium sm:text-2xl">Go around the world</h2>
+                            <h2 className="mt-4 text-xl font-medium sm:text-2xl">About Me</h2>
                         </div>
 
                         <div className="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                            <h3 className="mt-4 text-xl font-medium sm:text-2xl">Go around the world</h3>
+                            <h3 className="mt-4 text-xl font-medium sm:text-2xl">Hi, I am Raj 👋</h3>
 
                             <p className="mt-4 text-sm sm:text-base">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-                                praesentium voluptatem omnis atque culpa repellendus.
+                                I&lsquo;m your go-to web developer and designer, specializing in front-end development to bring your online visions to life. From sleek interfaces to captivating user experiences, I&lsquo;m here to spin some coding magic and cater to your every web requirement. Let&lsquo;s weave a web of brilliance together! 🚀🌐
                             </p>
-
-                            <p className="mt-8 font-bold">Read more</p>
+                            <p className="flex flex-row h-fit text-[12px] lg:text-sm mt-3">
+                                <p className='text-xl'>🎓</p>
+                                <p className='mx-3 font-semibold flex justify-center h-full'>  B Tech Electrical Engineering&lsquo;26, Delhi Technological University
+                                </p>
+                            </p>
+                            <p className="flex flex-row h-fit text-[12px] lg:text-sm my-2">
+                                <p className='text-xl'>🎓</p>
+                                <p className='mx-3 font-semibold flex justify-center h-full'>  B Tech Electrical Engineering&lsquo;26, Delhi Technological University
+                                </p>
+                            </p><p className="flex flex-row h-fit text-[12px] lg:text-sm my-2">
+                                <p className='text-xl'>🎓</p>
+                                <p className='mx-3 font-semibold flex justify-center h-full'>  B Tech Electrical Engineering&lsquo;26, Delhi Technological University
+                                </p>
+                            </p>
                         </div>
                     </div>
                 </div>
