@@ -9,9 +9,12 @@ module.exports = {
     extend: {
       fontFamily: {
         Creative: ['Creative', 'sans-serif'],
+        blogger: ['blogger', 'sans-serif'],
+        Lovers: ['Lovers', 'sans-serif'],
         Dosis: ['Dosis', 'sans-serif'],
         Oswald: ['Oswald', 'sans-serif'],
-        Poiret: ['Poiret One', 'cursive'],
+        Josefin: ['Josefin Sans', "sans-serif"],
+        Poiret: ['Poiret One', 'cursive'], 
       }
     },
   },

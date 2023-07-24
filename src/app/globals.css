@@ -71,13 +71,16 @@ body {
 }
 
 /* src/css/custom-font.css */
-
 @font-face {
   font-family: 'Creative';
-  src: url('../assets/Greyrose.otf') format('truetype');
+  src: url('../assets/Greyrose.otf') format('truetype'),
+       url('../assets/blogger.otf') format('truetype'),
+       url('../assets/Lovers.ttf') format('truetype');
   /* Update the path and font format if needed */
   font-weight: normal;
   font-style: normal;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Oswald&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
