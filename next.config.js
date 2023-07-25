@@ -5,6 +5,9 @@ const nextConfig = {}
 // tailwind.config.js
 
 module.exports = {
+  images: {
+    domains: ['images.unsplash.com'],
+  },
   theme: {
     extend: {
       fontFamily: {
