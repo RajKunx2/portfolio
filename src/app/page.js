@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Socials from "../components/Socials";
 import About from "../components/About";
 import Skills from "../components/Skills"
+import Projects from "../components/Projects"
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,6 +37,7 @@ const Home = () => {
         <Socials />
         <About />
         <Skills />
+        <Projects />
       </div>
     </div>
   );

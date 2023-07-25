@@ -42,6 +42,7 @@ const App = () => (
                 <Image alt="" src={tailwind} className="h-16 w-16 object-contain mx-24" />
                 <Image alt="" src={mongo} className="h-16 w-16 object-contain mx-24" />
                 <Image alt="" src={express} className="h-16 w-16 object-contain mx-24" />
+                <Image alt="" src={figma} className="h-16 w-16 object-contain mx-24" />
             </Marquee>
         </div>
     </div>
