@@ -13,7 +13,7 @@ const ZoomingImage = () => {
     const handleScroll = () => {
         const vh = window.innerHeight / 100;
         const scrollTop = document.documentElement.scrollTop;
-        const start = 100 * vh;
+        const start = 40 * vh;
         const stop = wrapHeight * vh;
 
         if (scrollTop > start && scrollTop < stop) {
@@ -63,9 +63,10 @@ const ZoomingImage = () => {
                                 <p className="text-xl font-bold text-white sm:text-2xl">{item.title}</p>
                                 <div className="mt-32 sm:mt-48 lg:mt-64 rounded-2xl">
                                     <div className="translate-y-8 transform opacity-0 rounded-2xl transition-all ground-hover:-translate-y-8 md:group-hover:-translate-y-32 group-hover:opacity-100">
-                                        <p className="text-sm text-white">
+                                        <p className="text-base mb-2 md:mb-4 md:text-lg md:my-2 font-Josefin font-medium text-white">
                                             {item.desc}
                                         </p>
+                                        <a className='bg-slate-900 rounded-2xl px-4 py-2 text-base mb-8 md:mb-0 md:text-lg md:my-2 font-Josefin font-bold text-white' href={item.link}> Link 🔗</a>
                                     </div>
                                 </div>
                             </div>
