@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 70);
+    }, 7400);
     return () => clearTimeout(timer);
   }, []);
 
