@@ -19,7 +19,7 @@ const ZoomingImage = () => {
     const [ref2, inView2] = useInView({ threshold: 0.2 });
 
     useEffect(() => {
-        if (inView1) {
+        if (inView2) {
             controls.start("visible");
         }
     }, [controls, inView2]);
@@ -44,10 +44,10 @@ const ZoomingImage = () => {
                             variants={{
                                 visible: { opacity: 1, y: 0 },
                                 hidden: { opacity: 0, y: 60 },
-                            }} key={index} className="object-contain mx-4 sm:mx-auto min-mx-6 group relative block bg-black w-auto h-[300px] my-12 rounded-2xl shadow-2xl shadow-[#d76457] border-[#d76457]">
+                            }} key={index} className="border-4 bg-blend-multiply object-contain group relative block bg-black w-[354px] h-[200px] my-12 rounded-[20px] shadow-2xl shadow-[#d76457] border-[#d76457] mx-4">
                             <Image
-                                width={1920}
-                                height={1080}
+                                width={708}
+                                height={400}
                                 alt="Developer"
                                 src={item.img}
                                 className="absolute inset-0 h-full w-full object-cover opacity-75 rounded-2xl transition-opacity group-hover:opacity-50"
@@ -55,11 +55,8 @@ const ZoomingImage = () => {
                             <div className="relative p-4 sm:p-6 lg:p-8 rounded-2xl">
                                 <p className="text-xl font-bold text-white sm:text-2xl font-Dosis">{item.title}</p>
                                 <div className="mt-32 sm:mt-48 lg:mt-64 rounded-2xl">
-                                    <div className="translate-y-8 transform opacity-0 rounded-2xl transition-all ground-hover:-translate-y-32 md:group-hover:-translate-y-32 group-hover:opacity-100">
-                                        <p className="text-base mb-2 md:mb-4 md:text-lg md:my-2 font-Josefin font-medium text-white">
-                                            {item.desc}
-                                        </p>
-                                        <a className='bg-slate-900 rounded-2xl px-4 py-2 text-base mb-8 md:mb-0 md:text-lg md:my-2 font-Josefin font-bold text-white' href={item.link}> Link 🔗</a>
+                                    <div className="relative top-0 left-0 translate-y-8 transform opacity-0 rounded-2xl transition-all group-hover:-translate-y-4 md:group-hover:-translate-y-44 group-hover:opacity-100">
+                                        <a className='bg-[#d76457] rounded-2xl py-2 px-4 text-base mb-12 md:mb-0 md:text-lg font-Josefin font-bold text-white' href={item.link}> Link 🔗</a>
                                     </div>
                                 </div>
                             </div>

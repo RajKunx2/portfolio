@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7400);
+    }, 4);
     return () => clearTimeout(timer);
   }, []);
 
@@ -38,6 +38,10 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
+        <div class="ocean">
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
       </div>
     </div>
   );
