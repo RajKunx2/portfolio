@@ -6,6 +6,8 @@ import Socials from "../components/Socials";
 import About from "../components/About";
 import Skills from "../components/Skills"
 import Projects from "../components/Projects"
+import Contact from "../components/Contact"
+
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,10 +40,7 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
-        <div class="ocean">
-          <div class="wave"></div>
-          <div class="wave"></div>
-        </div>
+        <Contact />
       </div>
     </div>
   );
