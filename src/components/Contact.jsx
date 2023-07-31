@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import emailjs from "@emailjs/browser"
+import Contact from "../assets/contact.png"
 
 const SignUpComponent = () => {
     const form = useRef();
@@ -15,17 +16,16 @@ const SignUpComponent = () => {
                 console.log(error.text);
             });
     };
-
     return (
         <div className="relative lg:py-20">
-            <div className="flex flex-col items-center justify-between pt-0 pr-10 pb-0 pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl xl:px-5 lg:flex-row">
-                <div className="flex flex-col items-center w-full pt-5 pr-10 pb-8 pl-10 lg:pt-20 lg:flex-row bg-white rounded-2xl">
+            <div className="flex flex-col items-center justify-between pt-0 md:pr-10 pb-0 md:pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl xl:px-5 lg:flex-row">
+                <div className="flex flex-col items-center w-full pt-5 pr-10 pb-8 pl-10 lg:pt-20 lg:flex-row md:bg-white/30 backdrop-blur-md rounded-2xl">
                     <div className="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
                         <div className="flex flex-col items-center justify-center w-full h-full relative lg:pr-10">
-                            <Image width={1080} height={1920} src="https://res.cloudinary.com/macxenon/image/upload/v1631570592/Run_-_Health_qcghbu.png" alt="button" />
+                            <Image width={1080} height={1920} src={Contact} alt="button" />
                         </div>
                     </div>
-                    <form ref={form} onSubmit={sendEmail} className="w-full mt-20 mr-0 mb-0 ml-0 relative z-10 max-w-2xl lg:mt-0 lg:w-5/12">
+                    <form ref={form} onSubmit={sendEmail} className="w-full mt-20 mr-0 mb-0 ml-0 relative z-10 lg:mt-0 lg:w-5/12">
                         <div className="flex flex-col items-start justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl relative z-10">
                             <p className="w-full text-4xl font-medium text-center leading-snug font-Creative">Contact Me</p>
                             <div className="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
