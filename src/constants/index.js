@@ -6,7 +6,7 @@ const experiences = [
         company_name: "Starbucks",
         icon: image,
         iconBg: "#E6DEDD",
-        date: "March 2020 - April 2021",
+        date: "MARCH 2020 - APRIL 2021",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -19,7 +19,7 @@ const experiences = [
         company_name: "Tesla",
         icon: image,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "JAN 2021 - FEB 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -31,21 +31,8 @@ const experiences = [
         title: "Web Developer",
         company_name: "Shopify",
         icon: image,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: image,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "JAN 2022 - JAN 2023",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
