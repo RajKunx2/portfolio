@@ -19,9 +19,21 @@
   opacity: 0.8;
 }
 
-body {
-  background-color: #f4b8af;
-}
+/* body { */
+/* background-color: #f4b8af; */
+/* background-image: url("../assets/bggif.gif"); */
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+/* background-attachment: fixed; */
+/* background-size: cover; */
+/* } */
+/*  */
+/* #about {
+  background-image: url("../assets/bggif.gif"); */
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+/* background-size: cover; */
+/* } */
 
 /* tailwind.css (or any other CSS file you want to include this component's styles) */
 
