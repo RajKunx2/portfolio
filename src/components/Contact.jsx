@@ -1,17 +1,18 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
-import emailjs from "@emailjs/browser"
-import Contact from "../assets/contact.png"
+import emailjs from "emailjs-com";
+import Contact from "../assets/contact.png";
 
 const SignUpComponent = () => {
     const form = useRef();
+
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_jk8jh3o', 'template_3syjdpi', form.current, 'v0txexV6zNsPVbDmP')
+        emailjs.sendForm('service_jk8jh3o', 'template_5l6fezz', form.current, 'v0txexV6zNsPVbDmP')
             .then((result) => {
-                alert("Your Message has been Sent!")
+                alert("Your Message has been Sent!");
                 console.log(result.text);
-                e.target.reset;
+                form.current.reset(); // Use form.current to reset the form
             }, (error) => {
                 console.log(error.text);
             });
@@ -60,6 +61,7 @@ const SignUpComponent = () => {
                 </div>
             </div>
         </div>
+
     );
 };
 
