@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7500);
+    }, 75);
     return () => clearTimeout(timer);
   }, []);
 
@@ -60,4 +60,5 @@ const Home = () => {
 };
 
 export default Home;
+
 

@@ -1,9 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
-import Image from "next/image";
-import Lg from "../assets/lg.gif";
-import Md from "../assets/md.gif";
-import Sm from "../assets/sm.gif";
+import LgVideo from "../assets/lg.mp4";
+import SmVideo from "../assets/sm.mp4";
 
 const BackgroundChanger = () => {
     const [screenSize, setScreenSize] = useState('');
@@ -11,10 +9,9 @@ const BackgroundChanger = () => {
     useEffect(() => {
         function handleResize() {
             const screenWidth = window.innerWidth;
+
             if (screenWidth < 640) {
                 setScreenSize('small');
-            } else if (screenWidth < 1024) {
-                setScreenSize('medium');
             } else {
                 setScreenSize('large');
             }
@@ -28,19 +25,20 @@ const BackgroundChanger = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    let imageSource = null;
+    let videoSource = null;
 
     if (screenSize === 'small') {
-        imageSource = Sm;
-    } else if (screenSize === 'medium') {
-        imageSource = Md;
+        videoSource = SmVideo;
     } else {
-        imageSource = Lg;
+        videoSource = LgVideo;
     }
 
     return (
-        <div className={`h-screen flex items-center justify-center ${screenSize === 'small' ? 'bg-screen-small' : ''} ${screenSize === 'medium' ? 'bg-screen-medium' : ''} ${screenSize === 'large' ? 'bg-screen-large' : ''}`}>
-            <Image alt='' src={imageSource} className='object-cover' />
+        <div className={`h-screen flex items-center justify-center ${screenSize === 'small' ? 'bg-screen-small' : ''} ${screenSize === 'large' ? 'bg-screen-large' : ''}`}>
+            <video autoPlay loop muted className='object-cover'>
+                <source src={videoSource} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
         </div>
     );
 };

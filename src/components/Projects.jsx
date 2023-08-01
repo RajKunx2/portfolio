@@ -35,7 +35,7 @@ const ZoomingImage = () => {
                         visible: { opacity: 1, y: 0 },
                         hidden: { opacity: 0, y: 60 },
                     }} className="text-center text-5xl lg:text-7xl font-Creative my-8 text-[#d76457]">Projects</motion.h1>
-                <div className='flex flex-col md:flex-row flex-wrap w-screen justify-around rounded-2xl'>
+                <div className='flex flex-col md:flex-row md:flex-wrap w-screen justify-around rounded-2xl'>
                     {Data.map((item, index) => (
                         <motion.div ref={ref2}
                             animate={controls}
@@ -44,7 +44,7 @@ const ZoomingImage = () => {
                             variants={{
                                 visible: { opacity: 1, y: 0 },
                                 hidden: { opacity: 0, y: 60 },
-                            }} key={index} className="border-4 bg-blend-multiply object-contain group relative block bg-black w-[354px] h-[200px] my-12 rounded-[20px] shadow-2xl shadow-[#d76457] border-[#d76457] mx-4">
+                            }} key={index} className="border-4 bg-blend-multiply object-contain group relative block bg-black w-[354px] h-[200px] my-12 rounded-[20px] shadow-2xl shadow-[#d76457] border-[#d76457] mx-auto md:mx-4">
                             <Image
                                 width={708}
                                 height={400}

@@ -8,6 +8,15 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
+    const styles = {
+        customDateStyle: {
+            color: "#d76457",
+            fontSize: "20px",
+            margin: "20px",
+            fontWeight: "bold", // Corrected property name for font-weight
+            // fontFamily: "Josefin Sans", // Corrected property name for font-family
+        },
+    };
     return (
         <VerticalTimelineElement
             contentStyle={{
@@ -16,7 +25,11 @@ const ExperienceCard = ({ experience }) => {
                 opacity: "60"
             }}
             contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-            date={experience.date}
+            date={
+                <span className="custom-date" style={styles.customDateStyle}>
+                    {experience.date}
+                </span>
+            }
             iconStyle={{ background: experience.iconBg }}
             icon={
                 <div className='flex justify-center items-center w-full h-full'>
