@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 8000);
+    }, 9000);
     return () => clearTimeout(timer);
   }, []);
 
