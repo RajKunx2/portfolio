@@ -12,6 +12,12 @@ const Data = [
         link: "https://www.incomingindia.co.in/",
     },
     {
+        img: "/sri.png",
+        title: "SRIJAN NIVAS",
+        desc: "Welcome to Toxic Media – your gateway to captivating content and immersive experiences. Dive into a world of creativity where we craft media that leaves a lasting impact and sparks meaningful connections.",
+        link: "https://interior-design-theta.vercel.app/",
+    },
+    {
         img: "/toxic.png",
         title: "TOXIC MEDIA",
         desc: "Welcome to Toxic Media – your gateway to captivating content and immersive experiences. Dive into a world of creativity where we craft media that leaves a lasting impact and sparks meaningful connections.",
@@ -29,11 +35,11 @@ const Data = [
         desc: "MathsLoyal - Your dedicated support for solving student doubts. Empowering learning through expert guidance and personalized assistance.",
         link: "https://www.mathsloyal.com/",
     },
-    {
-        img: "/boundless.png",
-        title: "BOUNDLESS",
-        desc: "Boundless - Empowering lives with dignity. We distribute pads to those in need, fostering a world of equality and compassion.",
-        link: "https://hm-boundless.vercel.app/",
-    },
+    // {
+    //     img: "/boundless.png",
+    //     title: "BOUNDLESS",
+    //     desc: "Boundless - Empowering lives with dignity. We distribute pads to those in need, fostering a world of equality and compassion.",
+    //     link: "https://hm-boundless.vercel.app/",
+    // },
 ];
 export default Data;
