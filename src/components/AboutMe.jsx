@@ -11,8 +11,8 @@ const ExperienceCard = ({ experience }) => {
     const styles = {
         customDateStyle: {
             color: "#d76457",
-            fontSize: "20px",
-            margin: "20px",
+            fontSize: "16px",
+            margin: "16px",
             fontWeight: "bold", // Corrected property name for font-weight
             // fontFamily: "Josefin Sans", // Corrected property name for font-family
         },

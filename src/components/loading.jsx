@@ -10,7 +10,7 @@ const BackgroundChanger = () => {
         function handleResize() {
             const screenWidth = window.innerWidth;
 
-            if (screenWidth < 640) {
+            if (screenWidth < 768) {
                 setScreenSize('small');
             } else {
                 setScreenSize('large');
