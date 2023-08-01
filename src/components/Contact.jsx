@@ -1,9 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useRef,useEffect } from 'react';
 import Image from 'next/image';
 import emailjs from "emailjs-com";
 import Contact from "../assets/contact.png";
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from "framer-motion";
 
 const SignUpComponent = () => {
+    const controls = useAnimation();
+    const [ref1, inView1] = useInView({ threshold: 0.01 });
+
+    useEffect(() => {
+        if (inView1) {
+            controls.start("visible");
+        }
+    }, [controls, inView1]);
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -18,7 +29,15 @@ const SignUpComponent = () => {
             });
     };
     return (
-        <div className="relative lg:py-20" id='Contact'>
+        <motion.div
+            ref={ref1}
+            animate={controls}
+            initial="hidden"
+            transition={{ duration: 1 }}
+            variants={{
+                visible: { opacity: 1, y: 0 },
+                hidden: { opacity: 0, y: 60 },
+            }} className="relative lg:py-20" id='Contact'>
             <div className="flex flex-col items-center justify-between pt-0 md:pr-10 pb-0 md:pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl xl:px-5 lg:flex-row">
                 <div className="flex flex-col items-center w-full pt-5 pr-10 pb-8 pl-10 lg:pt-20 lg:flex-row bg-white/30 backdrop-blur-md rounded-2xl">
                     <div className="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
@@ -60,7 +79,7 @@ const SignUpComponent = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </motion.div>
 
     );
 };

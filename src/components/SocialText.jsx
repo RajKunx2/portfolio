@@ -25,7 +25,7 @@ const App = () => {
             <div className='flex flex-row my-0'>
                 <a href='https://www.linkedin.com/in/rajshekhar-singh-312543251/'><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 mx-4 md:my-3 my-0"
+                    className="h-8 w-8 mx-4 md:my-3 my-2"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
@@ -33,7 +33,7 @@ const App = () => {
                 </svg></a>
                 <a href='https://github.com/RajKunx2'><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-8 w-8 mx-4 md:my-3 my-0"
+                    className="h-8 w-8 mx-4 md:my-3 my-2"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path

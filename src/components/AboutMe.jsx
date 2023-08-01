@@ -13,8 +13,7 @@ const ExperienceCard = ({ experience }) => {
             color: "#d76457",
             fontSize: "16px",
             margin: "16px",
-            fontWeight: "bold", // Corrected property name for font-weight
-            // fontFamily: "Josefin Sans", // Corrected property name for font-family
+            fontWeight: "bold",
         },
     };
     return (
@@ -72,7 +71,7 @@ const Experience = () => {
                 <p className="text-center text-4xl lg:text-7xl font-Creative my-4 text-[#d76457]">
                     What I have done so far
                 </p>
-                <h2 className="text-center text-white text-xl lg:text-3xl font-Josefin">
+                <h2 className="text-center text-white text-xl lg:text-3xl font-sans">
                     Work Experience
                 </h2>
             </motion.div>

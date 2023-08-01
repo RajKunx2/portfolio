@@ -2,7 +2,6 @@
 import React ,{useState, useEffect} from "react";
 import Image from "next/image";
 import Lg from "../assets/lg.gif";
-// import Md from "../assets/md.gif";
 import Sm from "../assets/sm.gif";
 
 
