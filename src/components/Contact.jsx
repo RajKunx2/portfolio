@@ -18,7 +18,7 @@ const SignUpComponent = () => {
             });
     };
     return (
-        <div className="relative lg:py-20">
+        <div className="relative lg:py-20" id='Contact'>
             <div className="flex flex-col items-center justify-between pt-0 md:pr-10 pb-0 md:pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl xl:px-5 lg:flex-row">
                 <div className="flex flex-col items-center w-full pt-5 pr-10 pb-8 pl-10 lg:pt-20 lg:flex-row bg-white/30 backdrop-blur-md rounded-2xl">
                     <div className="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
