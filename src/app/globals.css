@@ -5,12 +5,12 @@
   opacity: 0.8;
 }
 
-.bg-screen-medium {
+/* .bg-screen-medium {
   background-image: url('../assets/lg.gif');
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
-}
+} */
 
 .bg-screen-large {
   background-image: url('../assets/lg.gif');

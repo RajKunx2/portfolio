@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 7500);
+    }, 8000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -46,7 +46,7 @@ const Home = () => {
       </div>
       <div
         style={{ visibility: isLoading ? "hidden" : "visible" }}
-        className="pt-screen flex items-center flex-col"
+        className="flex items-center flex-col"
       >
         <Socials />
         <About />

@@ -1,8 +1,10 @@
 "use client"
-import React, { useState, useEffect } from 'react';
-import LgImage from "../assets/lg.gif"; // Replace with the image for large screens
-import SmImage from "../assets/sm.gif"; // Replace with the image for small screens
-import Image from "next/image"
+import React ,{useState, useEffect} from "react";
+import Image from "next/image";
+import Lg from "../assets/lg.gif";
+// import Md from "../assets/md.gif";
+import Sm from "../assets/sm.gif";
+
 
 const BackgroundChanger = () => {
     const [screenSize, setScreenSize] = useState('');
@@ -10,9 +12,10 @@ const BackgroundChanger = () => {
     useEffect(() => {
         function handleResize() {
             const screenWidth = window.innerWidth;
-
-            if (screenWidth < 768) {
+            if (screenWidth < 640) {
                 setScreenSize('small');
+            } else if (screenWidth < 1024) {
+                setScreenSize('medium');
             } else {
                 setScreenSize('large');
             }
@@ -29,16 +32,19 @@ const BackgroundChanger = () => {
     let imageSource = null;
 
     if (screenSize === 'small') {
-        imageSource = SmImage;
+        imageSource = Sm;
+    } else if (screenSize === 'medium') {
+        imageSource = Lg;
     } else {
-        imageSource = LgImage;
+        imageSource = Lg;
     }
 
     return (
-        <div className={`h-screen flex items-center justify-center ${screenSize === 'small' ? 'bg-screen-small' : ''} ${screenSize === 'large' ? 'bg-screen-large' : ''}`}>
-            <Image src={imageSource} alt="Background" className='object-cover w-full h-full' />
+        <div className={`h-screen flex items-center justify-center ${screenSize === 'small' ? 'bg-screen-small' : ''} ${screenSize === 'medium' ? 'bg-screen-medium' : ''} ${screenSize === 'large' ? 'bg-screen-large' : ''}`}>
+            <Image alt='' src={imageSource} className='object-cover' />
         </div>
     );
 };
 
 export default BackgroundChanger;
+
