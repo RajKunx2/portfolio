@@ -1,6 +1,5 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import Loading from "../components/loading";
 import About from "@/components/About";
 import Hero from "../components/Hero";
@@ -9,7 +8,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import AboutMe from "../components/AboutMe";
-import Bg from "../assets/bggif.gif";
+import BgVideo from "../assets/video.mp4"; 
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,19 +16,19 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 75);
+    }, 7500);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="relative">
       <div className="fixed inset-0 z-[-1000] bg-fixed pointer-events-none">
-        <Image
+        <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src={Bg}
-          alt=""
-          width={1920}
-          height={1080}
+          src={BgVideo}
+          autoPlay
+          muted
+          loop
         />
       </div>
 
@@ -47,7 +46,8 @@ const Home = () => {
       </div>
       <div
         style={{ visibility: isLoading ? "hidden" : "visible" }}
-        className="pt-screen flex items-center flex-col">
+        className="pt-screen flex items-center flex-col"
+      >
         <Socials />
         <About />
         <AboutMe />
@@ -60,3 +60,4 @@ const Home = () => {
 };
 
 export default Home;
+
