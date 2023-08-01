@@ -1,5 +1,6 @@
 import React from 'react';
 import SocailText from "./SocialText"
+// import Resume from "../assets/Raj_resume.pdf"
 
 const Socials = () => {
   return (
@@ -12,7 +13,7 @@ const Socials = () => {
           NEED A FREELANCER? 💸
         </button>
         <button className="button-56 font-inter basis-1/3 md:mr-20" role="button">
-          CHECK OUT RESUME 👇
+          <a href="./Raj_resume.pdf">CHECK OUT RESUME 👇</a>
         </button>
       </div>
       <SocailText />
