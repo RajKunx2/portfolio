@@ -1,4 +1,4 @@
-/* .bg-screen-small {
+.bg-screen-small {
   background-image: url('../assets/sm.gif');
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
-} */
+}
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
