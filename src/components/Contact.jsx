@@ -20,7 +20,7 @@ const SignUpComponent = () => {
     return (
         <div className="relative lg:py-20">
             <div className="flex flex-col items-center justify-between pt-0 md:pr-10 pb-0 md:pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl xl:px-5 lg:flex-row">
-                <div className="flex flex-col items-center w-full pt-5 pr-10 pb-8 pl-10 lg:pt-20 lg:flex-row md:bg-white/30 backdrop-blur-md rounded-2xl">
+                <div className="flex flex-col items-center w-full pt-5 pr-10 pb-8 pl-10 lg:pt-20 lg:flex-row bg-white/30 backdrop-blur-md rounded-2xl">
                     <div className="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
                         <div className="flex flex-col items-center justify-center w-full h-full relative lg:pr-10">
                             <Image width={1080} height={1920} src={Contact} alt="button" />

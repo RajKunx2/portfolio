@@ -1,43 +1,40 @@
-import image from "../assets/css.png"
+import react from "../assets/react.png"
+import dtu from "../assets/dtu.png"
+import maths from "../assets/maths.png"
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: image,
+        title: "Electrical Engineering",
+        company_name: "Delhi Technological University",
+        icon: dtu,
         iconBg: "#E6DEDD",
-        date: "MARCH 2020 - APRIL 2021",
+        date: "NOV 2022 - PRESENT",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Sophomore at DTU pursuing my B.Tech in Electrical Engineering.",
+            "Collaborating with teams from various societies like E-Cell and Roundtable in various departments.",
+            "Participating in various competitions and hackathons to level up myself."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: image,
+        title: "Freelance Web Developer",
+        company_name: "Self Employed",
+        icon: react,
         iconBg: "#E6DEDD",
-        date: "JAN 2021 - FEB 2022",
+        date: "FEB 2023 - PRESENT",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Worked with over 7 clients in the past few months delivering them High-Performance Web Solutions.",
+            "Developed websites for clients ranging from a travel agency to an interior design company."
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: image,
+        title: "Front End Web Developer",
+        company_name: "MathsLoyal",
+        icon: maths,
         iconBg: "#E6DEDD",
-        date: "JAN 2022 - JAN 2023",
+        date: "APRIL 2023 - JUNE 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Worked on the Front End part of the website, making it more appealing to the viewers.",
+            "Developed and designed new login and registration home pages and various animations for a smoother experience."
         ],
     },
 ];
