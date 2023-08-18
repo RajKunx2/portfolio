@@ -15,7 +15,7 @@ const Data = [
         img: "/sri.png",
         title: "SRIJAN NIVAS",
         desc: "Welcome to Toxic Media – your gateway to captivating content and immersive experiences. Dive into a world of creativity where we craft media that leaves a lasting impact and sparks meaningful connections.",
-        link: "https://interior-design-theta.vercel.app/",
+        link: "https://www.srijannivaas.com/",
     },
     {
         img: "/toxic.png",
